@@ -43,7 +43,7 @@ function App() {
     setError('');
     setOutputYaml('');
     try {
-      const response = await axios.post('http://localhost:8080/api/convert', {
+      const response = await axios.post('https://kyverno-converter.onrender.com/api/convert', {
         yaml: inputYaml,
       });
       setOutputYaml(response.data.convertedYaml);
