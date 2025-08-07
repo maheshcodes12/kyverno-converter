@@ -13,7 +13,7 @@ func main() {
 
 	// Configure CORS to allow requests from the frontend development server
 	config := cors.DefaultConfig()
-	config.AllowOrigins = []string{"http://localhost:5173"}
+	config.AllowOrigins = []string{"*"}
 	config.AllowMethods = []string{"POST", "OPTIONS"}
 	r.Use(cors.New(config))
 
