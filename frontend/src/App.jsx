@@ -59,9 +59,9 @@ function App() {
     <div className="min-h-screen bg-gray-900 text-gray-200 p-4 sm:p-6 lg:p-8">
       <div className="max-w-7xl mx-auto">
         <header className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-white">Kyverno Policy Converter</h1>
+          <h1 className="text-4xl font-bold text-white">Legacy YAML to CEL Policy Converter</h1>
           <p className="mt-2 text-lg text-gray-400">
-            Dynamically convert any legacy Kyverno `pattern` or `foreach` policy to a CEL-based `ValidatingPolicy`.
+            Dynamically convert any legacy YAML `pattern` or `foreach` policy to a CEL-based `ValidatingPolicy`.
           </p>
         </header>
 
@@ -85,7 +85,7 @@ function App() {
         <main className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Input Panel */}
           <div className="flex flex-col">
-            <h2 className="text-xl font-semibold mb-2 text-white">Legacy Kyverno Policy (YAML Input)</h2>
+            <h2 className="text-xl font-semibold mb-2 text-white">Legacy YAML Policy (YAML Input)</h2>
             <div className="flex-grow bg-gray-800 rounded-lg p-1 border border-gray-700">
               <textarea
                 value={inputYaml}
